@@ -1,0 +1,13 @@
+.functionality {
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+
+    &__title {}
+
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,13 +1,11 @@
-$arrow-height: 24px;
-
 .navigation {
     position: absolute;
     margin-left: 20px;
-    margin-top: calc(#{$header-main-height / 2} - #{$arrow-height / 2});
+    margin-top: calc(#{$header-main-height / 2} - #{$icon-size / 2});
 
     &__arrow {
-        width: 24px;
-        height: $arrow-height;
+        width: $icon-size;
+        height: $icon-size;
 
         &--hidden {
             display: none;

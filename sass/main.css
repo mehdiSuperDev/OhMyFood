@@ -58,13 +58,47 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-h1, h2 {
+h1, h6 {
   font-family: "Shrikhand", sans-serif;
 }
 
 body {
   font-family: "roboto", sans-serif;
   color: #1E1E1E;
+}
+
+.instruction-button {
+  height: 73px;
+  border-radius: 20px;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+  box-shadow: 2px 2px 3px gray;
+}
+.instruction-button__icon {
+  height: 24px;
+  width: 24px;
+}
+.instruction-button__title {
+  font: roboto;
+  font-size: 16px;
+  font-weight: bold;
+}
+.instruction-button__step {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  margin-left: -12.5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.instruction-button:active {
+  background-color: #F5EDFF;
 }
 
 .header-main {
@@ -92,4 +126,15 @@ body {
 }
 .navigation__arrow--hidden {
   display: none;
+}
+
+.functionality {
+  background-color: white;
+  padding: 40px 20px 40px 20px;
+}
+.functionality__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */

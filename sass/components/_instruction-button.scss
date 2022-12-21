@@ -1,0 +1,41 @@
+$step-size: 25px;
+$half-step-size: $step-size / 2;
+
+
+.instruction-button {
+    height: 73px;
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    box-shadow: 2px 2px 3px gray;
+
+    &__icon {
+        height: $icon-size;
+        width: $icon-size;
+    }
+
+    &__title {
+        font: roboto;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &__step {
+        @include circle($step-size);
+        background-color: $colour-primary;
+        margin-left: -$half-step-size;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    &:active {
+        background-color: #F5EDFF;
+    }
+
+    // debug
+    // background-color: red;
+}
