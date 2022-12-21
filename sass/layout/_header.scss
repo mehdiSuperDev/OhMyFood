@@ -1,0 +1,15 @@
+$header-main-height: 65px;
+
+.header-main {
+    height: $header-main-height;
+
+    &__title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // debug
+    background-color: yellow;
+}

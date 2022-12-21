@@ -1,0 +1,21 @@
+$arrow-height: 24px;
+
+.navigation {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: calc(#{$header-main-height / 2} - #{$arrow-height / 2});
+
+    &__arrow {
+        width: 24px;
+        height: $arrow-height;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    // debug
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
+}
