@@ -1,0 +1,21 @@
+.footer-omf {
+    background-color: #353535;
+    height: 200px;
+    padding-left: 20px;
+    @include flex(column, center, flex-start);
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__title {
+        color: white;
+    }
+
+    &__list {
+        margin-top: 20px;
+        font-weight: semi-bold;
+        color: white;
+        list-style-type: none;
+   } 
+}

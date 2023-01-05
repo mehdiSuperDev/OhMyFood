@@ -50,3 +50,13 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
