@@ -1,13 +1,19 @@
-.functionality {
-    background-color: white;
-    padding: 40px 20px 40px 20px;
+$container-layout-padding: 40px 20px 40px 20px;
 
-    &__title {}
+.how-to-layout {
+    background-color: white;
+    padding: $container-layout-padding;
 
     &__list {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        @include row-list-layout();
+    }
+}
+
+.restaurants-layout {
+    background-color: #F7F7F7;
+    padding: $container-layout-padding;
+
+    &__list {
+        @include row-list-layout();
     }
 }

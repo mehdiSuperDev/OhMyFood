@@ -77,3 +77,10 @@
 @mixin box-shadow-transition() {
     @include transition(box-shadow, 0.3s, ease-in-out);
 }
+
+@mixin row-list-layout() {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

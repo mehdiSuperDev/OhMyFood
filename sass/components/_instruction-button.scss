@@ -2,7 +2,7 @@ $step-size: 25px;
 $half-step-size: $step-size / 2;
 
 
-.instruction-button {
+.how-to-button {
     height: 73px;
     border-radius: 20px;
     background-color: #F7F7F7;
@@ -12,15 +12,8 @@ $half-step-size: $step-size / 2;
     align-items: center;
     box-shadow: $box-shadow;
 
-    &__icon {
-        height: $icon-size;
-        width: $icon-size;
-    }
-
     &__title {
-        font: roboto;
-        font-size: 16px;
-        font-weight: bold;
+        @include text(16px, bold);
     }
 
     &__step {
@@ -34,8 +27,6 @@ $half-step-size: $step-size / 2;
 
     &:active {
         background-color: #F5EDFF;
+        color: $colour-primary;
     }
-
-    // debug
-    // background-color: red;
 }
