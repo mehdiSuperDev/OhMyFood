@@ -1,0 +1,7 @@
+.gradient-button {
+    @include button(white, linear-gradient(180deg, $colour-primary, $colour-secondary 100%));
+    text-align: center;
+    font-weight: bold;
+    @include text-center-vertically(48px);
+}
+
