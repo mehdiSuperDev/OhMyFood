@@ -3,17 +3,7 @@
     margin-left: 20px;
     margin-top: calc(#{$header-main-height / 2} - #{$icon-size / 2});
 
-    &__arrow {
-        width: $icon-size;
-        height: $icon-size;
-
-        &--hidden {
-            display: none;
-        }
+    &--hidden {
+        display: none;
     }
-
-    // debug
-    height: 30px;
-    width: 30px;
-    border: 1px solid red;
 }
