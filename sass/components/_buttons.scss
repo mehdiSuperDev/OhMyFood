@@ -1,20 +1,62 @@
-// test
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 255px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: $box-shadow;
 
-.btn {
-    display: inline-block;
-    margin: 0 auto;
-    background: #15DEA5;
-    padding: 1rem;
-    &--disabled {
-        background: grey;
+    // animation
+    @include opacity-transition();
+    @include box-shadow-transition();
+
+    &:hover {
+        opacity: $lighter-opacity;
+        box-shadow: $box-shadow-dark;
     }
-  
-     &--outline {
-        background: transparent;
-        border: 2px solid #15DEA5;
-        &.btn--disabled {
-  
-           border: 2px solid grey;
+
+    &__image {
+        @include size(100%, 70%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__status {
+        font-weight: bold;
+        @include text-center-vertically(32px);
+        @include button($colour-green, $colour-lightgreen, 4px);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__wrapper {
+        height: 30%;
+        padding: 0px 20px;
+        background: #fff;
+        @include flex(row, space-between, center);
+
+        .card__content {
+            @include flex(column, flex-start, flex-start);
+
+            .card__title {
+                @include text(16px, bold);
+            }
+        
+            .card__description {
+                @include text(14px, lighter);
+            }
+        }
+    
+        .card__heart-icon {
+            color: lightgray;
+            @include transition(color, 0.5s, ease-in-out);
+            
+            &:hover {
+                color: $colour-primary;
+            }
         }
     }
-  }
+}

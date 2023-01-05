@@ -10,7 +10,7 @@ $half-step-size: $step-size / 2;
     flex-direction: row;
     column-gap: 20px;
     align-items: center;
-    box-shadow: 2px 2px 3px gray;
+    box-shadow: $box-shadow;
 
     &__icon {
         height: $icon-size;

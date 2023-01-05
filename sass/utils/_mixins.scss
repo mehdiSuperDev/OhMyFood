@@ -3,3 +3,77 @@
     height: $width;
     border-radius: 50%;
 }
+
+@mixin flex($direction, $justify, $align) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin button($color, $background, $border-radius: 20px) {
+    color: $color;
+    background: $background;
+    border-radius: $border-radius;
+    padding: 0px 20px;
+}
+
+@mixin icon($width: $icon-size, $height: $icon-size) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($family, $weight, $size) {
+    font-family: $family;
+    @include text($size, $weight);
+}
+
+@mixin text($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin linear-gradient($direction, $color1, $color2) {
+    background: $color1;
+    background: -webkit-linear-gradient($direction, $color1, $color2);
+    background: -o-linear-gradient($direction, $color1, $color2);
+    background: -moz-linear-gradient($direction, $color1, $color2);
+    background: linear-gradient($direction, $color1, $color2);
+}
+
+@mixin transition($property, $duration, $timing-function) {
+    -webkit-transition: $property $duration $timing-function;
+    -moz-transition: $property $duration $timing-function;
+    -ms-transition: $property $duration $timing-function;
+    -o-transition: $property $duration $timing-function;
+    transition: $property $duration $timing-function;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+@mixin text-center-vertically($height) {
+    height: $height;
+    line-height: $height;
+}
+
+@mixin opacity-transition() {
+    @include transition(opacity, 0.3s, ease-in-out);
+}
+
+@mixin box-shadow-transition() {
+    @include transition(box-shadow, 0.3s, ease-in-out);
+}
