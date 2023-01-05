@@ -1,5 +1,37 @@
 $container-layout-padding: 40px 20px 40px 20px;
 
+
+.localization {
+    // Pour ne recouvrir l'ombre du header
+    margin-top: 4px;
+
+    @include flex(row, center, center);
+    column-gap: 5px;
+    font-weight: bold;
+    height: 48px;
+    background-color: #EAEAEA;
+}
+
+.presentation {
+    @include flex(column, center, center);
+    height: 286px;
+    background-color: #F7F7F7;
+    padding: $container-layout-padding;
+    line-height: 150%;
+
+    &__title {
+        @include text(24px, bold);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        @include text(16px, lighter);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
 .how-to-layout {
     background-color: white;
     padding: $container-layout-padding;

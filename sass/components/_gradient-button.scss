@@ -3,5 +3,12 @@
     text-align: center;
     font-weight: bold;
     @include text-center-vertically(48px);
+
+    border: none;
+    box-shadow: $box-shadow;
+
+    &:active {
+        background: linear-gradient(180deg, $colour-secondary, $colour-primary 100%);
+    }
 }
 
