@@ -1,23 +1,75 @@
 .meal-button {
+    @include flex(row, space-between, center);
     box-shadow: $box-shadow;
     background-color: white;
     padding: 10px;
     border-radius: 20px;
+    height: 70px;
+    overflow: hidden;
 
-    &__title {
-        font-family: $font-family;
-        @include text(16px, bold);
-    }
-
-    &__footer-wrapper {
-        @include flex(row, space-between, center);
-
+    &__left-side {
+        .meal-button__title {
+            font-family: $font-family;
+            @include text(16px, bold);
+        }
+    
         .meal-button__description {
             @include text(14px, lighter);
         }
+    }
+
+    &__right-side {   
+        @include flex(row, flex-start, flex-end);
         
         .meal-button__price {
             @include text(16px, bold);
         }
+
+        .meal-button__check-wrapper {
+            @include flex(row, center, center);
+
+            // reset
+            margin-top: -20px;
+            margin-bottom: -20px;
+            margin-right: -10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            margin-left: 20px;
+
+            height: 70px;
+            width: 0px;
+            background-color: $colour-lightgreen;
+
+            .meal-button__check-icon {
+                transform: rotate(180deg);
+                color: white;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &:hover .meal-button__check-wrapper { 
+        @include animation(show-green-wrapper, 0.3s, ease-in, 0s, 1, normal, forwards);
+    }
+
+    &:hover .meal-button__check-icon { 
+        @include animation(show-arrow, 0.3s, ease-in, 0s, 1, normal, forwards);
+    }
+}
+
+@keyframes show-green-wrapper {
+    0%   { width: 0px; }
+    100% { width: 70px; }
+}
+
+@keyframes show-arrow {
+    0% { 
+        visibility: hidden;
+        transform: rotate(180deg);
+    }
+    100% { 
+        visibility: visible; 
+        transform: rotate(0deg);
     }
 }
