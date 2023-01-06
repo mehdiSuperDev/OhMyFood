@@ -4,7 +4,7 @@
     background-color: white;
     padding: 10px;
     border-radius: 20px;
-    height: 70px;
+    max-height: 70px;
     overflow: hidden;
 
     &__left-side {
@@ -15,29 +15,32 @@
     
         .meal-button__description {
             @include text(14px, lighter);
+            @include line-clamp(1, 1.50em);
         }
     }
 
-    &__right-side {   
-        @include flex(row, flex-start, flex-end);
+    &__right-side {  
+        @include flex(row, center, center);
+        height: 70px;
         
         .meal-button__price {
             @include text(16px, bold);
+            min-width: 35px;
         }
 
         .meal-button__check-wrapper {
             @include flex(row, center, center);
 
             // reset
-            margin-top: -20px;
-            margin-bottom: -20px;
+            // margin-top: -20px;
+            // margin-bottom: -20px;
             margin-right: -10px;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
 
             margin-left: 20px;
 
-            height: 70px;
+            height: 100%;
             width: 0px;
             background-color: $colour-lightgreen;
 
