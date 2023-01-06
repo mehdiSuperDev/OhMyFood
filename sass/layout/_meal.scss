@@ -1,0 +1,40 @@
+.meal-layout {
+    @include flex(column, flex-start, normal);
+    background-color: #F7F7F7;
+    padding: $container-layout-padding;
+
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+    // monter sur l'arrière plan
+    position: relative;
+    margin-top: -30px;
+
+    &__heading {
+        @include flex(row, space-between, center);
+
+        .meal-layout__title {
+            @include font($font-family-secondary, bold, 24px);
+        }
+    }
+
+    &__subtitle {
+        @include text(16px, lighter);
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        //reset
+        margin-bottom: -10px;
+    }
+
+    &__list {
+        @include row-list-layout();
+        margin-bottom: 40px;
+    }
+
+    &__line {
+        width: 40px;
+        border-bottom: 3px solid $colour-lightgreen;
+        margin-top:10px;
+    }
+}

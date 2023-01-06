@@ -1,0 +1,7 @@
+.meal-background {
+    @include size(100%, 286px);
+    background-image: url("../assets/plat1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,23 @@
+.meal-button {
+    box-shadow: $box-shadow;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+    &__title {
+        font-family: $font-family;
+        @include text(16px, bold);
+    }
+
+    &__footer-wrapper {
+        @include flex(row, space-between, center);
+
+        .meal-button__description {
+            @include text(14px, lighter);
+        }
+        
+        .meal-button__price {
+            @include text(16px, bold);
+        }
+    }
+}
