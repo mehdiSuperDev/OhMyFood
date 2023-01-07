@@ -52,6 +52,8 @@
         }
     }
 
+    //animation au survol
+
     &:hover .meal-button__check-wrapper { 
         @include animation(show-green-wrapper, 0.3s, ease-in, 0s, 1, normal, forwards);
     }
@@ -59,7 +61,32 @@
     &:hover .meal-button__check-icon { 
         @include animation(show-arrow, 0.3s, ease-in, 0s, 1, normal, forwards);
     }
+
+    //animation apparition
+    animation: reveal 1.5s ease-in forwards;
+    opacity: 0;
 }
+
+//animation apparition
+
+.meal-button:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.meal-button:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.meal-button:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+@keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+//animation au survol
 
 @keyframes show-green-wrapper {
     0%   { width: 0px; }
