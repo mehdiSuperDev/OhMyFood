@@ -29,12 +29,17 @@
 
     &__list {
         @include row-list-layout();
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     &__line {
         width: 40px;
         border-bottom: 3px solid $colour-lightgreen;
         margin-top:10px;
+    }
+
+    &__button { 
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }
