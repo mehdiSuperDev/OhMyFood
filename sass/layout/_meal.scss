@@ -43,3 +43,11 @@
         margin-top: 20px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .meal-layout {
+        &__list {
+            @include grid(3,1, 20px);
+        }
+    }
+}

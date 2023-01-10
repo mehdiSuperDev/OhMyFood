@@ -49,3 +49,17 @@ $container-layout-padding: 40px 20px 40px 20px;
         @include row-list-layout();
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .how-to-layout {
+        &__list {
+            @include grid(3,1, 20px);
+        }
+    }
+
+    .restaurants-layout {
+        &__list {
+            @include grid(2, 1, 20px)
+        }
+    }
+}
