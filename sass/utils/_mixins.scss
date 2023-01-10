@@ -102,3 +102,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+@mixin hover-shadow() {
+    &:hover {
+        opacity: $lighter-opacity;
+        box-shadow: $box-shadow-dark;
+    }
+}

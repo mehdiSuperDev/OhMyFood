@@ -10,5 +10,7 @@
     &:active {
         background: linear-gradient(180deg, $colour-secondary, $colour-primary 100%);
     }
+
+    @include hover-shadow();
 }
 

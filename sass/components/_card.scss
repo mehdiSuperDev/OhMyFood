@@ -12,10 +12,7 @@
     @include opacity-transition();
     @include box-shadow-transition();
 
-    &:hover {
-        opacity: $lighter-opacity;
-        box-shadow: $box-shadow-dark;
-    }
+    @include hover-shadow();
 
     &__image {
         @include size(100%, 70%);

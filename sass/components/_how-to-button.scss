@@ -12,6 +12,8 @@ $half-step-size: $step-size / 2;
     align-items: center;
     box-shadow: $box-shadow;
 
+    @include hover-shadow();
+
     &__title {
         @include text(16px, bold);
     }
