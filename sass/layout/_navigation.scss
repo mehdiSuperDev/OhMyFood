@@ -3,6 +3,10 @@
     margin-left: 20px;
     margin-top: calc(#{$header-main-height / 2} - #{$icon-size / 2});
 
+    &__link {
+        color: black;
+    }
+
     &--hidden {
         display: none;
     }
