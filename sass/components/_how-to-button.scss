@@ -1,5 +1,5 @@
 $step-size: 25px;
-$half-step-size: $step-size / 2;
+$half-step-size: calc($step-size / 2);
 
 
 .how-to-button {
