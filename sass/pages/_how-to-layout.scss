@@ -1,0 +1,16 @@
+.how-to-layout {
+    background-color: white;
+    padding: $container-layout-padding;
+
+    &__list {
+        @include row-list-layout();
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .how-to-layout {
+        &__list {
+            @include grid(3,1, 20px);
+        }
+    }
+}

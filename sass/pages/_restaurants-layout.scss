@@ -1,0 +1,16 @@
+.restaurants-layout {
+    background-color: #F7F7F7;
+    padding: $container-layout-padding;
+
+    &__list {
+        @include row-list-layout();
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .restaurants-layout {
+        &__list {
+            @include grid(2, 1, 20px)
+        }
+    }
+}

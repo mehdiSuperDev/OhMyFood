@@ -1,0 +1,10 @@
+.localization {
+    // Pour ne recouvrir l'ombre du header
+    margin-top: 4px;
+
+    @include flex(row, center, center);
+    column-gap: 5px;
+    font-weight: bold;
+    height: 48px;
+    background-color: #EAEAEA;
+}

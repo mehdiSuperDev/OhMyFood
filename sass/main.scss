@@ -1,26 +1,22 @@
 @import "./utils/variables";
-// @import "./utils/functions";
 @import "./utils/mixins";
+
 @import "./base/reset";
 @import "./base/typography";
 
-
-// @import "./utils/extensions";
-// @import "./base/base";
-// @import "./base/typography";
 @import "./components/card";
 @import "./components/gradient-button";
 @import "./components/how-to-button";
+@import "./components/meal-button";
+
 @import "./layout/header";
 @import "./layout/navigation";
-@import "./layout/functionality";
-@import "./layout/meal-background";
-@import "./layout/meal";
 @import "./layout/footer";
-@import "./pages/meal-button";
+
+@import "./pages/how-to-layout";
 @import "./pages/loader";
-// @import "./layouts/container";
-// @import "./layouts/form";
-// @import "./pages/work";
-// @import "./pages/about";
-// @import "./pages/project";
+@import "./pages/localization";
+@import "./pages/meal-background";
+@import "./pages/meal";
+@import "./pages/presentation";
+@import "./pages/restaurants-layout";
